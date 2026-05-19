@@ -467,6 +467,24 @@ a:hover {
     border-color: var(--text-primary);
 }
 
+.timeline-node-origin {
+    background-color: var(--text-primary);
+    border-color: var(--text-primary);
+    animation: pulse-glow 2.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(237, 237, 237, 0.3);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(237, 237, 237, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(237, 237, 237, 0);
+    }
+}
+
 .timeline-hash {
     font-family: var(--font-mono);
     font-size: 0.8rem;
@@ -476,6 +494,7 @@ a:hover {
 
 .timeline-content p {
     color: var(--text-secondary);
+    line-height: 1.5;
 }
 
 /* -----------------------------------
@@ -580,5 +599,9 @@ a:hover {
 
     .contact-val {
         font-size: 0.90rem;
+    }
+
+    .timeline-item {
+        padding-bottom: 30px;
     }
 }
