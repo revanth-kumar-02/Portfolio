@@ -592,13 +592,18 @@ a:hover {
         padding: 20px;
     }
 
+    .contact-links li {
+        gap: 8px;
+    }
+
     .contact-label {
-        width: 65px;
-        font-size: 0.95rem;
+        width: 75px;
+        font-size: clamp(0.75rem, 3vw, 0.9rem);
     }
 
     .contact-val {
-        font-size: 0.90rem;
+        font-size: clamp(0.7rem, 3.5vw, 0.9rem);
+        white-space: nowrap;
     }
 
     .timeline-item {
