@@ -478,18 +478,21 @@ a:hover {
 .contact-links li {
     margin-bottom: 15px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .contact-label {
     color: var(--text-muted);
     width: 80px;
+    flex-shrink: 0;
 }
 
 .contact-val {
     color: var(--text-primary);
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .contact-val[href] {
