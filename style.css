@@ -550,4 +550,13 @@ a:hover {
     .terminal-body {
         padding: 20px;
     }
+    
+    .contact-label {
+        width: 65px;
+        font-size: 0.85rem;
+    }
+    
+    .contact-val {
+        font-size: 0.85rem;
+    }
 }
