@@ -73,7 +73,7 @@ body {
 
 /* Layout Utilities */
 .section-padding {
-    padding: 100px 20px;
+    padding: clamp(50px, 8vh, 90px) 20px;
     max-width: var(--max-width);
     margin: 0 auto;
 }
@@ -226,11 +226,12 @@ a:hover {
    HERO SECTION
 ----------------------------------- */
 .hero {
-    min-height: 100vh;
+    min-height: clamp(500px, 80vh, 800px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: clamp(100px, 12vh, 140px);
+    padding-bottom: clamp(40px, 6vh, 80px);
 }
 
 .hero-name {
@@ -582,10 +583,6 @@ a:hover {
 
     .hero-name {
         font-size: 3rem;
-    }
-
-    .section-padding {
-        padding: 60px 20px;
     }
 
     .terminal-body {
