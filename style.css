@@ -427,6 +427,10 @@ a:hover {
 /* -----------------------------------
    JOURNEY SECTION
 ----------------------------------- */
+#journey {
+    padding-bottom: clamp(80px, 12vh, 150px);
+}
+
 .timeline {
     position: relative;
     padding-left: 20px;
@@ -496,6 +500,16 @@ a:hover {
 .timeline-content p {
     color: var(--text-secondary);
     line-height: 1.5;
+}
+
+.timeline-content a.timeline-link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--text-primary);
+}
+
+.timeline-content a.timeline-link:hover {
+    color: #fff;
 }
 
 /* -----------------------------------
